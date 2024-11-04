@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <form>
+        <div class="mb-3 row">
+            <label
+                for="name"
+                class="col-form-label"
+                >Name</label
+            >
+            <div
+                class=""
+            >
+                <input
+                [(ngModel)] = "nuevoObjecto.name"
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    placeholder="Ingrese el nombre"
+                />
+            </div>
+        </div>
+        
+        <div class="mb-3 row">
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" (click)="addTipoEquipo()">
+                    Guardar
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

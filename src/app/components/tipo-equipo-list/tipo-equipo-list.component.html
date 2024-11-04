@@ -1,0 +1,28 @@
+
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col" class="text-center">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+        @for (tipoEquipo of tipoEquipos; track tipoEquipo.id){
+          <tr>
+            <th scope="row">1</th>
+            
+            <td>{{tipoEquipo.id}}</td>
+            <td>{{tipoEquipo.name}}</td>
+            <td class="text-center">
+                <button  class="btn btn-danger mx-2" (click)="eliminarTipoEquipo(tipoEquipo.id!)" >🗑️</button>
+                <a href="#" class="btn btn-warning mx-2">✏️</a>
+            </td>
+          </tr>
+          }
+        </tbody>
+      </table>
+</div>
+
